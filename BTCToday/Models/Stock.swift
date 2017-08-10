@@ -8,8 +8,20 @@
 
 import Foundation
 
-struct Stock {
+enum CoinType: String {
+  case ethereum        = "ETH"
+  case bitcoin         = "BTC"
+  case litecoin        = "LTC"
+  case bitcoinCash     = "BCH"
+  case ripple          = "XRP"
+  case ethereumClassic = "ETC"
   
+  static func all() -> [CoinType] {
+    return [.bitcoin, .bitcoinCash, .ethereum, .ethereumClassic, .litecoin, .ripple]
+  }
+}
+
+struct Stock {
   let instrument: String
   let lastPrice: Double
   let bestBid: Double
@@ -17,5 +29,4 @@ struct Stock {
   let currency: String
   let timestamp: TimeInterval
   let volume24h: Double
-  
 }
