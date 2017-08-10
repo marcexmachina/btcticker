@@ -22,10 +22,17 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
+      let client = BTCMarketsClient()
+      client.fetch(forInstrument: "BTC", forCurrency: "AUD") {
+        stock in
+        DispatchQueue.main.async {
+          self.listViewController.contents.append(stock)
+        }
+      }
         // Set up the widget list view controller.
         // The contents property should contain an object for each row in the list.
-        self.listViewController.contents = ["Hello World!", "Second ticker", "Third ticker"]
+//        self.listViewController.contents = ["Hello World!", "Second ticker", "Third ticker"]
     }
     
     override func dismissViewController(_ viewController: NSViewController) {
@@ -77,10 +84,12 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
     // MARK: - NCWidgetListViewDelegate
     
     func widgetList(_ list: NCWidgetListViewController, viewControllerForRow row: Int) -> NSViewController {
-        // Return a new view controller subclass for displaying an item of widget
-        // content. The NCWidgetListViewController will set the representedObject
-        // of this view controller to one of the objects in its contents array.
-        return ListRowViewController()
+      // Return a new view controller subclass for displaying an item of widget
+      // content. The NCWidgetListViewController will set the representedObject
+      // of this view controller to one of the objects in its contents array.
+      let rowController = ListRowViewController()
+      rowController.stock = self.listViewController.contents[row] as? Stock
+      return rowController
     }
     
     func widgetListPerformAddAction(_ list: NCWidgetListViewController) {
