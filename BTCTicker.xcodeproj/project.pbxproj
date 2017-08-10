@@ -12,6 +12,13 @@
 		988E2CE81F3BE38600E5D959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988E2CE71F3BE38600E5D959 /* Assets.xcassets */; };
 		988E2CEB1F3BE38600E5D959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988E2CE91F3BE38600E5D959 /* Main.storyboard */; };
 		988E2CF61F3BE38600E5D959 /* BTCTickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E2CF51F3BE38600E5D959 /* BTCTickerTests.swift */; };
+		988E2D071F3BE3B700E5D959 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988E2D061F3BE3B700E5D959 /* NotificationCenter.framework */; };
+		988E2D0C1F3BE3B700E5D959 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E2D0B1F3BE3B700E5D959 /* TodayViewController.swift */; };
+		988E2D0E1F3BE3B700E5D959 /* ListRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E2D0D1F3BE3B700E5D959 /* ListRowViewController.swift */; };
+		988E2D111F3BE3B700E5D959 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988E2D0F1F3BE3B700E5D959 /* TodayViewController.xib */; };
+		988E2D141F3BE3B700E5D959 /* ListRowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988E2D121F3BE3B700E5D959 /* ListRowViewController.xib */; };
+		988E2D181F3BE3B700E5D959 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 988E2D161F3BE3B700E5D959 /* InfoPlist.strings */; };
+		988E2D1B1F3BE3B700E5D959 /* BTCToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 988E2D041F3BE3B700E5D959 /* BTCToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +29,28 @@
 			remoteGlobalIDString = 988E2CDF1F3BE38600E5D959;
 			remoteInfo = BTCTicker;
 		};
+		988E2D191F3BE3B700E5D959 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 988E2CD81F3BE38600E5D959 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 988E2D031F3BE3B700E5D959;
+			remoteInfo = BTCToday;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		988E2D1F1F3BE3B700E5D959 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				988E2D1B1F3BE3B700E5D959 /* BTCToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		988E2CE01F3BE38600E5D959 /* BTCTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +62,15 @@
 		988E2CF11F3BE38600E5D959 /* BTCTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTCTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		988E2CF51F3BE38600E5D959 /* BTCTickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCTickerTests.swift; sourceTree = "<group>"; };
 		988E2CF71F3BE38600E5D959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		988E2D041F3BE3B700E5D959 /* BTCToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BTCToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		988E2D061F3BE3B700E5D959 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		988E2D0A1F3BE3B700E5D959 /* BTCToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BTCToday.entitlements; sourceTree = "<group>"; };
+		988E2D0B1F3BE3B700E5D959 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		988E2D0D1F3BE3B700E5D959 /* ListRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowViewController.swift; sourceTree = "<group>"; };
+		988E2D101F3BE3B700E5D959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		988E2D131F3BE3B700E5D959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ListRowViewController.xib; sourceTree = "<group>"; };
+		988E2D151F3BE3B700E5D959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		988E2D171F3BE3B700E5D959 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +88,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		988E2D011F3BE3B700E5D959 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988E2D071F3BE3B700E5D959 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +104,8 @@
 			children = (
 				988E2CE21F3BE38600E5D959 /* BTCTicker */,
 				988E2CF41F3BE38600E5D959 /* BTCTickerTests */,
+				988E2D081F3BE3B700E5D959 /* BTCToday */,
+				988E2D051F3BE3B700E5D959 /* Frameworks */,
 				988E2CE11F3BE38600E5D959 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +115,7 @@
 			children = (
 				988E2CE01F3BE38600E5D959 /* BTCTicker.app */,
 				988E2CF11F3BE38600E5D959 /* BTCTickerTests.xctest */,
+				988E2D041F3BE3B700E5D959 /* BTCToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +141,36 @@
 			path = BTCTickerTests;
 			sourceTree = "<group>";
 		};
+		988E2D051F3BE3B700E5D959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				988E2D061F3BE3B700E5D959 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		988E2D081F3BE3B700E5D959 /* BTCToday */ = {
+			isa = PBXGroup;
+			children = (
+				988E2D0B1F3BE3B700E5D959 /* TodayViewController.swift */,
+				988E2D0D1F3BE3B700E5D959 /* ListRowViewController.swift */,
+				988E2D0F1F3BE3B700E5D959 /* TodayViewController.xib */,
+				988E2D121F3BE3B700E5D959 /* ListRowViewController.xib */,
+				988E2D151F3BE3B700E5D959 /* Info.plist */,
+				988E2D161F3BE3B700E5D959 /* InfoPlist.strings */,
+				988E2D091F3BE3B700E5D959 /* Supporting Files */,
+			);
+			path = BTCToday;
+			sourceTree = "<group>";
+		};
+		988E2D091F3BE3B700E5D959 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				988E2D0A1F3BE3B700E5D959 /* BTCToday.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,10 +181,12 @@
 				988E2CDC1F3BE38600E5D959 /* Sources */,
 				988E2CDD1F3BE38600E5D959 /* Frameworks */,
 				988E2CDE1F3BE38600E5D959 /* Resources */,
+				988E2D1F1F3BE3B700E5D959 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				988E2D1A1F3BE3B700E5D959 /* PBXTargetDependency */,
 			);
 			name = BTCTicker;
 			productName = BTCTicker;
@@ -131,6 +211,23 @@
 			productReference = 988E2CF11F3BE38600E5D959 /* BTCTickerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		988E2D031F3BE3B700E5D959 /* BTCToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 988E2D1C1F3BE3B700E5D959 /* Build configuration list for PBXNativeTarget "BTCToday" */;
+			buildPhases = (
+				988E2D001F3BE3B700E5D959 /* Sources */,
+				988E2D011F3BE3B700E5D959 /* Frameworks */,
+				988E2D021F3BE3B700E5D959 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTCToday;
+			productName = BTCToday;
+			productReference = 988E2D041F3BE3B700E5D959 /* BTCToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +249,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 988E2CDF1F3BE38600E5D959;
 					};
+					988E2D031F3BE3B700E5D959 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = WEXR3T62Q9;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 988E2CDB1F3BE38600E5D959 /* Build configuration list for PBXProject "BTCTicker" */;
@@ -169,6 +271,7 @@
 			targets = (
 				988E2CDF1F3BE38600E5D959 /* BTCTicker */,
 				988E2CF01F3BE38600E5D959 /* BTCTickerTests */,
+				988E2D031F3BE3B700E5D959 /* BTCToday */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +290,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		988E2D021F3BE3B700E5D959 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988E2D111F3BE3B700E5D959 /* TodayViewController.xib in Resources */,
+				988E2D181F3BE3B700E5D959 /* InfoPlist.strings in Resources */,
+				988E2D141F3BE3B700E5D959 /* ListRowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +323,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		988E2D001F3BE3B700E5D959 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988E2D0C1F3BE3B700E5D959 /* TodayViewController.swift in Sources */,
+				988E2D0E1F3BE3B700E5D959 /* ListRowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +339,11 @@
 			isa = PBXTargetDependency;
 			target = 988E2CDF1F3BE38600E5D959 /* BTCTicker */;
 			targetProxy = 988E2CF21F3BE38600E5D959 /* PBXContainerItemProxy */;
+		};
+		988E2D1A1F3BE3B700E5D959 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 988E2D031F3BE3B700E5D959 /* BTCToday */;
+			targetProxy = 988E2D191F3BE3B700E5D959 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -227,6 +354,30 @@
 				988E2CEA1F3BE38600E5D959 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		988E2D0F1F3BE3B700E5D959 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				988E2D101F3BE3B700E5D959 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		988E2D121F3BE3B700E5D959 /* ListRowViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				988E2D131F3BE3B700E5D959 /* Base */,
+			);
+			name = ListRowViewController.xib;
+			sourceTree = "<group>";
+		};
+		988E2D161F3BE3B700E5D959 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				988E2D171F3BE3B700E5D959 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -327,6 +478,7 @@
 		988E2CFB1F3BE38600E5D959 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WEXR3T62Q9;
@@ -341,6 +493,7 @@
 		988E2CFC1F3BE38600E5D959 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WEXR3T62Q9;
@@ -384,6 +537,36 @@
 			};
 			name = Release;
 		};
+		988E2D1D1F3BE3B700E5D959 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BTCToday/BTCToday.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WEXR3T62Q9;
+				INFOPLIST_FILE = BTCToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcexmachina.BTCTicker.BTCToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		988E2D1E1F3BE3B700E5D959 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BTCToday/BTCToday.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WEXR3T62Q9;
+				INFOPLIST_FILE = BTCToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcexmachina.BTCTicker.BTCToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +592,14 @@
 			buildConfigurations = (
 				988E2CFE1F3BE38600E5D959 /* Debug */,
 				988E2CFF1F3BE38600E5D959 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		988E2D1C1F3BE3B700E5D959 /* Build configuration list for PBXNativeTarget "BTCToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				988E2D1D1F3BE3B700E5D959 /* Debug */,
+				988E2D1E1F3BE3B700E5D959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

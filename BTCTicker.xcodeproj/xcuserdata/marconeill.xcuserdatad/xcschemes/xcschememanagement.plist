@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BTCToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>988E2CF01F3BE38600E5D959</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>988E2D031F3BE3B700E5D959</key>
 		<dict>
 			<key>primary</key>
 			<true/>
